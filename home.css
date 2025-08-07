@@ -1,0 +1,73 @@
+ html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f9f6ed url('https://placehold.co/1200x800/fff9e6/fff9e6?text=+') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container-custom {
+      background: rgba(255, 242, 102, 0.15);
+      border-radius: 1.5rem;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 8px 30px rgba(255, 210, 48, 0.3);
+      max-width: 480px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      border: 2px solid #ffd230;
+    }
+    h1 {
+      font-family: 'Fredoka One', cursive;
+      font-weight: 700;
+      font-size: 2.8rem;
+      color: #ffd230;
+      text-shadow: 3px 3px 0 #3b6db2;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    @media (min-width: 576px) {
+      h1 {
+        font-size: 3.8rem;
+      }
+    }
+    @media (min-width: 768px) {
+      .container-custom {
+        max-width: 600px;
+        padding: 3rem 2rem;
+      }
+      h1 {
+        font-size: 4.5rem;
+      }
+    }
+    p.subtitle {
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 1.8rem;
+      color: #1a1a1a;
+      font-weight: 500;
+    }
+    .btn-custom {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.3rem;
+      letter-spacing: 0.3em;
+      background: #ffd230;
+      border: none;
+      color: #1a1a1a;
+      padding: 0.65rem 2.5rem;
+      border-radius: 50px;
+      box-shadow: 0 6px 15px rgba(255, 210, 48, 0.5);
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .btn-custom:hover, .btn-custom:focus {
+      background: #ffea5c;
+      box-shadow: 0 8px 25px rgba(255, 210, 48, 0.8);
+      color: #0a0a0a;
+      transform: translateY(-3px);
+      text-decoration: none;
+    }

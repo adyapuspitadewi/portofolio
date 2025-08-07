@@ -1,0 +1,306 @@
+ body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+     background: #f9f6ed url('https://placehold.co/1200x800/fff9e6/fff9e6?text=+') no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+
+    header {
+      background: linear-gradient(90deg, #ffd230, transparent, transparent);
+      box-shadow: 0 4px 12px rgba(255, 210, 48, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+    }
+    header nav a {
+      color: #e0f2fe;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    header nav a:hover {
+      color: #facc15;
+      text-decoration: none;
+    }
+    #menu-btn svg {
+      color: #e0f2fe;
+    }
+    #mobileMenu {
+      background: #203a43;
+    }
+    #mobileMenu a {
+      color: #e0f2fe;
+      font-weight: 600;
+    }
+    #mobileMenu a:hover {
+      color: #facc15;
+      text-decoration: none;
+    }
+    section {
+      padding: 4rem 1.5rem;
+    }
+    #home {
+      /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+      color: #f0f4f8;
+      border-radius: 1rem;
+      margin: 2rem auto;
+      max-width: 1100px;
+      /* box-shadow: 0 8px 24px rgba(118, 75, 162, 0.4); */
+    }
+    #home h1 {
+      font-weight: 800;
+      font-size: 3.75rem;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+    #home h1 span {
+      color: #facc15;
+    }
+    #home p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: #d1d5db;
+    }
+    #home a.btn-contact {
+      background-color: #facc15;
+      color: #3b0764;
+      font-weight: 700;
+      padding: 0.75rem 2.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(250, 204, 21, 0.6);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    #home a.btn-contact:hover {
+      background-color: #eab308;
+      color: #2a0450;
+    }
+    #about {
+
+      border-radius: 1rem;
+      margin: 2rem auto;
+      /* max-width: 1100px; */
+      /* box-shadow: 0 8px 24px rgba(250, 204, 21, 0.15); */
+      padding: 3rem 2rem;
+    }
+    #about h2 {
+      font-weight: 700;
+      color: #3b0764;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.75rem;
+    }
+    #about .about-text {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: #1e293b;
+      line-height: 1.6;
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+    #about .d-flex {
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    /* #about .image-wrapper {
+      position: relative;
+      width: 320px;
+      height: 400px;
+      flex-shrink: 0;
+    } */
+    #about .image-wrapper img.frame {
+      /* position: absolute; */
+      top: -20px;
+      left: -20px;
+      width: 360px;
+      height: 440px;
+      user-select: none;
+      pointer-events: none;
+      border-radius: 0;
+      z-index: 1;
+      filter: drop-shadow(0 0 6px rgba(250, 204, 21, 0.5));
+    }
+    #about .image-wrapper img.photo {
+      width: 320px;
+      height: 400px;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+      display: block;
+      border-radius: 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    #skills {
+      background: linear-gradient( #fefefe 0%, rgba(255, 210, 48, 0.5) 100%);
+      border-radius: 1rem;
+      margin: 2rem auto;
+      /* max-width: 1100px; */
+      box-shadow: 0 8px 24px rgba(255, 210, 48, 0.3);
+      padding: 3rem 2rem;
+      color: #3b0764;
+    }
+    #skills h2 {
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    #skills .skill-card {
+
+      border-radius: 1rem;
+      padding: 1.5rem;
+      color: #facc15;
+
+      transition: transform 0.3s ease;
+      height: 100%;
+
+        background: rgba(255, 242, 102, 0.15);
+
+      box-shadow: 0 8px 30px rgba(255, 210, 48, 0.3);
+
+
+      border: 2px solid #ffd230;
+    }
+    #skills .skill-card:hover {
+      transform: translateY(-8px);
+    }
+    #skills .skill-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+    #skills .progress {
+      height: 1.25rem;
+      background-color: #ffd230;
+      border-radius: 0.75rem;
+    }
+    #skills .progress-bar {
+      background-color: #facc15;
+    }
+    #portfolio {
+      background: transparent;
+      border-radius: 1rem;
+      margin: 2rem auto 3rem;
+      /* max-width: 1100px; */
+      /* box-shadow: 0 8px 24px rgba(250, 204, 21, 0.15); */
+      padding: 3rem 2rem;
+    }
+    #portfolio h2 {
+      font-weight: 700;
+      color: #3b0764;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.75rem;
+    }
+    #portfolio .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(250, 204, 21, 0.3);
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+      height: 100%;
+    }
+    #portfolio .card:hover {
+      box-shadow: 0 12px 36px rgba(250, 204, 21, 0.5);
+    }
+    #portfolio .card img {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      height: 180px;
+      object-fit: cover;
+    }
+    #portfolio .card-body h5 {
+      color: #3b0764;
+      font-weight: 700;
+    }
+    #portfolio .card-body p {
+      color: #475569;
+    }
+    #contact {
+      background: linear-gradient(135deg, rgba(255, 210, 48, 0.8) 0%, #764ba2 100%);
+      border-radius: 1rem;
+      margin: 2rem auto 3rem;
+      max-width: 700px;
+      box-shadow: 0 8px 24px rgba(118, 75, 162, 0.4);
+      padding: 3rem 2rem;
+      color: #f0f4f8;
+    }
+    #contact h2 {
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.75rem;
+    }
+    #contact form label {
+      font-weight: 600;
+      color: #facc15;
+    }
+    #contact form input,
+    #contact form textarea {
+      border-radius: 0.75rem;
+      border: none;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      color: #3b0764;
+      width: 100%;
+      resize: vertical;
+      box-shadow: inset 0 0 8px rgba(250, 204, 21, 0.6);
+      transition: box-shadow 0.3s ease;
+    }
+    #contact form input:focus,
+    #contact form textarea:focus {
+      outline: none;
+      box-shadow: 0 0 12px #facc15;
+      background-color: #fff8db;
+    }
+    #contact button {
+      background-color: #facc15;
+      color: #3b0764;
+      font-weight: 700;
+      padding: 0.75rem 2.5rem;
+      border-radius: 0.75rem;
+      border: none;
+      box-shadow: 0 6px 18px rgba(250, 204, 21, 0.7);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 1.5rem auto 0;
+      cursor: pointer;
+    }
+    #contact button:hover {
+      background-color: #eab308;
+      color: #2a0450;
+    }
+    footer {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: #e0f2fe;
+      text-align: center;
+      padding: 1rem 0;
+      font-weight: 600;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+    @media (min-width: 768px) {
+      #about .d-flex {
+        justify-content: space-between;
+        align-items: center;
+      }
+      #about .about-text {
+        margin: 0;
+        text-align: left;
+      }
+      #about .image-wrapper {
+        margin: 0;
+      }
+      #contact button {
+        margin: 1.5rem 0 0 0;
+      }
+    }
